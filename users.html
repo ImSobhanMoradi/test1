@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
-    <link rel="icon" href="/assets/images/ferrari.jpg" type="image/jpg">
+    <title>User Manager</title>
+    <link rel="icon" href="/assets/images/lamborghini.png" type="image/png">
     <link rel="stylesheet" href="/assets/materialize/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/util.css">
@@ -17,8 +17,9 @@
     <!-- navbar section ----------start---------- -->
     <nav class="yellow accent-2 z-depth-2 top_navbar">
         <div class="nav-wrapper">
-            <a href="#!" class="blue-text hide-on-med-and-up">Home</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger blue-text"><i class="material-icons">menu</i></a>
+            <a href="#!" class="blue-text hide-on-med-and-up">User Manager</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger blue-text"><i
+                    class="material-icons">menu</i></a>
             <ul class="hide-on-med-and-down">
                 <li><a href="/" class="blue-text">Home</a></li>
                 <li><a href="/users.html" class="blue-text">User Manager</a></li>
@@ -50,17 +51,29 @@
     </ul>
     <!-- navbar section ----------end---------- -->
 
-    <!-- home section ----------start---------- -->
-    <section class="flex-c-m flex-col sizefull p-r-20 p-l-20 p-t-100">
-        <img src="/assets/images/lamborghini.png" alt="ferrari" class="w-full max-w-200 filter_shadow">
-        <a href="https://google.com/"
-            class="waves-effect waves-light btn blue darken-3 w-full max-w-250 m-t-10 m-b-10 rounded_pill">Programming
-            Tutorial</a>
-        <a href="/users.html"
-            class="waves-effect waves-light btn blue darken-3 w-full max-w-250 m-t-10 m-b-10 rounded_pill">Users
-            Manager</a>
+
+    <!-- content section ----------start---------- -->
+    <section id="top_actions_section">
+
+        <!-- ---------- add button ---------- -->
+        <div class="p-l-10 p-r-10 p-t-10">
+            <button class="waves-effect waves-light btn blue darken-2 p-l-30 p-r-30 w-full rounded_pill flex-c">
+                <i class="material-icons m-r-5">add</i>
+                Add User
+            </button>
+        </div>
+        
+        <!-- ---------- search section ---------- -->
+        <div class="row">
+            <div class="input-field col s12">
+                <input value="" id="search" type="text" class="validate">
+                <label for="search"><i class="material-icons pos-relative top-7">search</i>Search</label>
+            </div>
+        </div>
+
+
     </section>
-    <!-- home section ----------start---------- -->
+    <!-- content section ----------start---------- -->
 
     <script src="/assets/materialize/js/materialize.min.js"></script>
     <script src="assets/js/app.js"></script>
