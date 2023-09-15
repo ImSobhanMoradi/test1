@@ -25,6 +25,23 @@
     transform: rotate(180deg);
 }
 
-.user_list_item.active , .user_list_item.active .collapsible-header{
+.user_list_item.active,
+.user_list_item.active .collapsible-header {
     background-color: rgba(128, 128, 128, 0.500);
+}
+
+table.highlight>tbody>tr:hover {
+    background-color: rgba(136, 242, 36, 0.5);
+}
+
+.rounded_top_30 {
+    border-radius: 30px 30px 0 0;
+}
+
+.rounded_30 {
+    border-radius: 30px;
+}
+
+.container {
+    width: 100% !important;
 }
